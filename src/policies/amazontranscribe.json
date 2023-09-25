@@ -1,0 +1,25 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Denytranscribe",
+      "Effect": "Deny",
+      "Action": [
+        "transcribe:CreateLanguageModel",
+        "transcribe:CreateMedicalVocabulary",
+        "transcribe:CreateVocabulary",
+        "transcribe:CreateVocabularyFilter",
+        "transcribe:StartMedicalTranscriptionJob",
+        "transcribe:StartTranscriptionJob",
+        "transcribe:TagResource"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "Null": {
+          "aws:RequestTag/team": "true",
+          "aws:RequestTag/cost-centre": "true"
+        }
+      }
+    }
+  ]
+}

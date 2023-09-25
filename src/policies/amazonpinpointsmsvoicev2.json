@@ -1,0 +1,20 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Denysms-voice",
+      "Effect": "Deny",
+      "Action": [
+        "sms-voice:CreateConfigurationSet",
+        "sms-voice:CreateOptOutList"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "Null": {
+          "aws:RequestTag/team": "true",
+          "aws:RequestTag/cost-centre": "true"
+        }
+      }
+    }
+  ]
+}

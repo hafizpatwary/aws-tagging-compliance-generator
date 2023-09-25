@@ -1,0 +1,30 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Denydatasync",
+      "Effect": "Deny",
+      "Action": [
+        "datasync:CreateAgent",
+        "datasync:CreateLocationAzureBlob",
+        "datasync:CreateLocationEfs",
+        "datasync:CreateLocationFsxLustre",
+        "datasync:CreateLocationFsxOntap",
+        "datasync:CreateLocationFsxOpenZfs",
+        "datasync:CreateLocationFsxWindows",
+        "datasync:CreateLocationHdfs",
+        "datasync:CreateLocationNfs",
+        "datasync:CreateLocationObjectStorage",
+        "datasync:CreateLocationS3",
+        "datasync:CreateLocationSmb"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "Null": {
+          "aws:RequestTag/team": "true",
+          "aws:RequestTag/cost-centre": "true"
+        }
+      }
+    }
+  ]
+}

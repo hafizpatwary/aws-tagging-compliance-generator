@@ -1,0 +1,25 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Denyglue",
+      "Effect": "Deny",
+      "Action": [
+        "glue:CreateCrawler",
+        "glue:CreateCustomEntityType",
+        "glue:CreateDataQualityRuleset",
+        "glue:CreateDevEndpoint",
+        "glue:CreateMLTransform",
+        "glue:CreateSession",
+        "glue:ListCustomEntityTypes"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "Null": {
+          "aws:RequestTag/team": "true",
+          "aws:RequestTag/cost-centre": "true"
+        }
+      }
+    }
+  ]
+}

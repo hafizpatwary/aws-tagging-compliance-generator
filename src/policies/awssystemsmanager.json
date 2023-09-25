@@ -1,0 +1,24 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Denyssm",
+      "Effect": "Deny",
+      "Action": [
+        "ssm:CreateActivation",
+        "ssm:CreateMaintenanceWindow",
+        "ssm:CreateOpsItem",
+        "ssm:CreateOpsMetadata",
+        "ssm:CreatePatchBaseline",
+        "ssm:RegisterManagedInstance"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "Null": {
+          "aws:RequestTag/team": "true",
+          "aws:RequestTag/cost-centre": "true"
+        }
+      }
+    }
+  ]
+}

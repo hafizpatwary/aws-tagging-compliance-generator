@@ -1,0 +1,23 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Denyservicediscovery",
+      "Effect": "Deny",
+      "Action": [
+        "servicediscovery:CreateHttpNamespace",
+        "servicediscovery:CreatePrivateDnsNamespace",
+        "servicediscovery:CreatePublicDnsNamespace",
+        "servicediscovery:TagResource",
+        "servicediscovery:UntagResource"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "Null": {
+          "aws:RequestTag/team": "true",
+          "aws:RequestTag/cost-centre": "true"
+        }
+      }
+    }
+  ]
+}

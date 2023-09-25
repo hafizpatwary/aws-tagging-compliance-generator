@@ -1,0 +1,27 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Denya4b",
+      "Effect": "Deny",
+      "Action": [
+        "a4b:CreateAddressBook",
+        "a4b:CreateBusinessReportSchedule",
+        "a4b:CreateConferenceProvider",
+        "a4b:CreateContact",
+        "a4b:CreateGatewayGroup",
+        "a4b:CreateNetworkProfile",
+        "a4b:CreateProfile",
+        "a4b:CreateSkillGroup",
+        "a4b:RegisterAVSDevice"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "Null": {
+          "aws:RequestTag/team": "true",
+          "aws:RequestTag/cost-centre": "true"
+        }
+      }
+    }
+  ]
+}
