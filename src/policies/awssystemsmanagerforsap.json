@@ -5,7 +5,8 @@
       "Sid": "Denyssm-sap",
       "Effect": "Deny",
       "Action": [
-        "ssm-sap:RegisterApplication"
+        "ssm-sap:RegisterApplication",
+        "ssm-sap:TagResource"
       ],
       "Resource": "*",
       "Condition": {

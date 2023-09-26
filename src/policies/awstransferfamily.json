@@ -5,11 +5,15 @@
       "Sid": "Denytransfer",
       "Effect": "Deny",
       "Action": [
+        "transfer:CreateAgreement",
         "transfer:CreateConnector",
         "transfer:CreateProfile",
         "transfer:CreateServer",
+        "transfer:CreateUser",
         "transfer:CreateWorkflow",
-        "transfer:ImportCertificate"
+        "transfer:ImportCertificate",
+        "transfer:ImportHostKey",
+        "transfer:TagResource"
       ],
       "Resource": "*",
       "Condition": {

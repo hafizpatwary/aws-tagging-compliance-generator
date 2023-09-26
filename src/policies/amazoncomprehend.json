@@ -1,0 +1,34 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Denycomprehend",
+      "Effect": "Deny",
+      "Action": [
+        "comprehend:CreateDataset",
+        "comprehend:CreateDocumentClassifier",
+        "comprehend:CreateEndpoint",
+        "comprehend:CreateEntityRecognizer",
+        "comprehend:CreateFlywheel",
+        "comprehend:ImportModel",
+        "comprehend:StartDocumentClassificationJob",
+        "comprehend:StartDominantLanguageDetectionJob",
+        "comprehend:StartEntitiesDetectionJob",
+        "comprehend:StartEventsDetectionJob",
+        "comprehend:StartKeyPhrasesDetectionJob",
+        "comprehend:StartPiiEntitiesDetectionJob",
+        "comprehend:StartSentimentDetectionJob",
+        "comprehend:StartTargetedSentimentDetectionJob",
+        "comprehend:StartTopicsDetectionJob",
+        "comprehend:TagResource"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "Null": {
+          "aws:RequestTag/team": "true",
+          "aws:RequestTag/cost-centre": "true"
+        }
+      }
+    }
+  ]
+}

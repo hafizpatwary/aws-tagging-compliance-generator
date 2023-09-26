@@ -5,13 +5,24 @@
       "Sid": "Denyglue",
       "Effect": "Deny",
       "Action": [
+        "glue:CreateBlueprint",
+        "glue:CreateConnection",
         "glue:CreateCrawler",
         "glue:CreateCustomEntityType",
         "glue:CreateDataQualityRuleset",
         "glue:CreateDevEndpoint",
+        "glue:CreateJob",
         "glue:CreateMLTransform",
+        "glue:CreateRegistry",
+        "glue:CreateSchema",
         "glue:CreateSession",
-        "glue:ListCustomEntityTypes"
+        "glue:CreateTrigger",
+        "glue:CreateWorkflow",
+        "glue:ListCustomEntityTypes",
+        "glue:ListDataQualityRulesets",
+        "glue:ListMLTransforms",
+        "glue:TagResource",
+        "glue:UntagResource"
       ],
       "Resource": "*",
       "Condition": {

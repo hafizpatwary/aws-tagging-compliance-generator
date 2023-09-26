@@ -6,7 +6,9 @@
       "Effect": "Deny",
       "Action": [
         "codestar-connections:CreateConnection",
-        "codestar-connections:CreateHost"
+        "codestar-connections:CreateHost",
+        "codestar-connections:TagResource",
+        "codestar-connections:UntagResource"
       ],
       "Resource": "*",
       "Condition": {

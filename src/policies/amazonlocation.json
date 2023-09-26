@@ -10,7 +10,9 @@
         "geo:CreateMap",
         "geo:CreatePlaceIndex",
         "geo:CreateRouteCalculator",
-        "geo:CreateTracker"
+        "geo:CreateTracker",
+        "geo:TagResource",
+        "geo:UntagResource"
       ],
       "Resource": "*",
       "Condition": {

@@ -5,7 +5,14 @@
       "Sid": "Denyappstream",
       "Effect": "Deny",
       "Action": [
-        "appstream:CreateAppBlock"
+        "appstream:CreateAppBlock",
+        "appstream:CreateAppBlockBuilder",
+        "appstream:CreateApplication",
+        "appstream:CreateFleet",
+        "appstream:CreateImageBuilder",
+        "appstream:CreateStack",
+        "appstream:CreateUpdatedImage",
+        "appstream:TagResource"
       ],
       "Resource": "*",
       "Condition": {

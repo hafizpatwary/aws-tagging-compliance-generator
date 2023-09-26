@@ -6,8 +6,10 @@
       "Effect": "Deny",
       "Action": [
         "guardduty:CreateDetector",
+        "guardduty:CreateFilter",
         "guardduty:CreateIPSet",
-        "guardduty:CreateThreatIntelSet"
+        "guardduty:CreateThreatIntelSet",
+        "guardduty:TagResource"
       ],
       "Resource": "*",
       "Condition": {

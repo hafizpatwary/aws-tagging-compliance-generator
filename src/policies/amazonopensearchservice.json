@@ -1,0 +1,21 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Denyes",
+      "Effect": "Deny",
+      "Action": [
+        "es:AddTags",
+        "es:CreateDomain",
+        "es:CreateElasticsearchDomain"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "Null": {
+          "aws:RequestTag/team": "true",
+          "aws:RequestTag/cost-centre": "true"
+        }
+      }
+    }
+  ]
+}

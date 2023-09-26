@@ -5,10 +5,17 @@
       "Sid": "Denyelasticache",
       "Effect": "Deny",
       "Action": [
+        "elasticache:AddTagsToResource",
+        "elasticache:CopySnapshot",
         "elasticache:CreateCacheCluster",
+        "elasticache:CreateCacheParameterGroup",
+        "elasticache:CreateCacheSecurityGroup",
+        "elasticache:CreateCacheSubnetGroup",
         "elasticache:CreateReplicationGroup",
         "elasticache:CreateSnapshot",
-        "elasticache:CreateUserGroup"
+        "elasticache:CreateUser",
+        "elasticache:CreateUserGroup",
+        "elasticache:PurchaseReservedCacheNodesOffering"
       ],
       "Resource": "*",
       "Condition": {

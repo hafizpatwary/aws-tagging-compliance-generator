@@ -5,8 +5,13 @@
       "Sid": "Denybackup-gateway",
       "Effect": "Deny",
       "Action": [
+        "backup-gateway:Backup",
         "backup-gateway:CreateGateway",
-        "backup-gateway:ImportHypervisorConfiguration"
+        "backup-gateway:ImportHypervisorConfiguration",
+        "backup-gateway:ListTagsForResource",
+        "backup-gateway:Restore",
+        "backup-gateway:TagResource",
+        "backup-gateway:UntagResource"
       ],
       "Resource": "*",
       "Condition": {

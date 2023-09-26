@@ -5,6 +5,9 @@
       "Sid": "Denyacm",
       "Effect": "Deny",
       "Action": [
+        "acm:AddTagsToCertificate",
+        "acm:ImportCertificate",
+        "acm:RemoveTagsFromCertificate",
         "acm:RequestCertificate"
       ],
       "Resource": "*",

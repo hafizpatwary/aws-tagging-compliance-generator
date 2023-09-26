@@ -10,7 +10,11 @@
         "mgn:CreateReplicationConfigurationTemplate",
         "mgn:CreateVcenterClientForMgn",
         "mgn:CreateWave",
-        "mgn:RegisterAgentForMgn"
+        "mgn:RegisterAgentForMgn",
+        "mgn:StartCutover",
+        "mgn:StartTest",
+        "mgn:TagResource",
+        "mgn:TerminateTargetInstances"
       ],
       "Resource": "*",
       "Condition": {

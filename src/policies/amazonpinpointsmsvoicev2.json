@@ -6,7 +6,11 @@
       "Effect": "Deny",
       "Action": [
         "sms-voice:CreateConfigurationSet",
-        "sms-voice:CreateOptOutList"
+        "sms-voice:CreateOptOutList",
+        "sms-voice:CreatePool",
+        "sms-voice:RequestPhoneNumber",
+        "sms-voice:TagResource",
+        "sms-voice:UntagResource"
       ],
       "Resource": "*",
       "Condition": {

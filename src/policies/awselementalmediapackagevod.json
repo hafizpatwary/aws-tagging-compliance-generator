@@ -7,7 +7,8 @@
       "Action": [
         "mediapackage-vod:CreateAsset",
         "mediapackage-vod:CreatePackagingConfiguration",
-        "mediapackage-vod:CreatePackagingGroup"
+        "mediapackage-vod:CreatePackagingGroup",
+        "mediapackage-vod:TagResource"
       ],
       "Resource": "*",
       "Condition": {

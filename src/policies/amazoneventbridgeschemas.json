@@ -5,7 +5,10 @@
       "Sid": "Denyschemas",
       "Effect": "Deny",
       "Action": [
-        "schemas:CreateDiscoverer"
+        "schemas:CreateDiscoverer",
+        "schemas:CreateRegistry",
+        "schemas:CreateSchema",
+        "schemas:TagResource"
       ],
       "Resource": "*",
       "Condition": {

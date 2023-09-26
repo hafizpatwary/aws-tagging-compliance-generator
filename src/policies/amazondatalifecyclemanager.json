@@ -5,7 +5,9 @@
       "Sid": "Denydlm",
       "Effect": "Deny",
       "Action": [
-        "dlm:CreateLifecyclePolicy"
+        "dlm:CreateLifecyclePolicy",
+        "dlm:TagResource",
+        "dlm:UntagResource"
       ],
       "Resource": "*",
       "Condition": {

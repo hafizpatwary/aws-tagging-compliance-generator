@@ -5,7 +5,8 @@
       "Sid": "Denykinesisanalytics",
       "Effect": "Deny",
       "Action": [
-        "kinesisanalytics:CreateApplication"
+        "kinesisanalytics:CreateApplication",
+        "kinesisanalytics:TagResource"
       ],
       "Resource": "*",
       "Condition": {

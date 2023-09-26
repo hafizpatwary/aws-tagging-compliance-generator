@@ -6,7 +6,9 @@
       "Effect": "Deny",
       "Action": [
         "pca-connector-ad:CreateConnector",
-        "pca-connector-ad:CreateDirectoryRegistration"
+        "pca-connector-ad:CreateDirectoryRegistration",
+        "pca-connector-ad:CreateTemplate",
+        "pca-connector-ad:TagResource"
       ],
       "Resource": "*",
       "Condition": {

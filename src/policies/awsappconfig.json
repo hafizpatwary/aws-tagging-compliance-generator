@@ -6,9 +6,13 @@
       "Effect": "Deny",
       "Action": [
         "appconfig:CreateApplication",
+        "appconfig:CreateConfigurationProfile",
         "appconfig:CreateDeploymentStrategy",
+        "appconfig:CreateEnvironment",
         "appconfig:CreateExtension",
-        "appconfig:CreateExtensionAssociation"
+        "appconfig:CreateExtensionAssociation",
+        "appconfig:StartDeployment",
+        "appconfig:TagResource"
       ],
       "Resource": "*",
       "Condition": {

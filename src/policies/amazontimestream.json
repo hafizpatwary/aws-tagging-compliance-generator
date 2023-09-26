@@ -5,7 +5,10 @@
       "Sid": "Denytimestream",
       "Effect": "Deny",
       "Action": [
-        "timestream:CreateScheduledQuery"
+        "timestream:CreateDatabase",
+        "timestream:CreateScheduledQuery",
+        "timestream:CreateTable",
+        "timestream:TagResource"
       ],
       "Resource": "*",
       "Condition": {

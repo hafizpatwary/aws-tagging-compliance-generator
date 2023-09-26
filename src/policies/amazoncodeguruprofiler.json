@@ -5,7 +5,9 @@
       "Sid": "Denycodeguru-profiler",
       "Effect": "Deny",
       "Action": [
-        "codeguru-profiler:CreateProfilingGroup"
+        "codeguru-profiler:CreateProfilingGroup",
+        "codeguru-profiler:TagResource",
+        "codeguru-profiler:UntagResource"
       ],
       "Resource": "*",
       "Condition": {

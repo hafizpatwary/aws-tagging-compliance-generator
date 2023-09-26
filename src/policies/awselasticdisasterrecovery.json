@@ -5,11 +5,21 @@
       "Sid": "Denydrs",
       "Effect": "Deny",
       "Action": [
+        "drs:AssociateSourceNetworkStack",
+        "drs:CreateConvertedSnapshotForDrs",
         "drs:CreateExtendedSourceServer",
         "drs:CreateLaunchConfigurationTemplate",
+        "drs:CreateRecoveryInstanceForDrs",
         "drs:CreateReplicationConfigurationTemplate",
         "drs:CreateSourceNetwork",
-        "drs:CreateSourceServerForDrs"
+        "drs:CreateSourceServerForDrs",
+        "drs:ExportSourceNetworkCfnTemplate",
+        "drs:ReverseReplication",
+        "drs:StartFailbackLaunch",
+        "drs:StartRecovery",
+        "drs:StartSourceNetworkRecovery",
+        "drs:TagResource",
+        "drs:TerminateRecoveryInstances"
       ],
       "Resource": "*",
       "Condition": {

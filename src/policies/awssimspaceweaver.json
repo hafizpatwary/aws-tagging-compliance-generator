@@ -5,7 +5,8 @@
       "Sid": "Denysimspaceweaver",
       "Effect": "Deny",
       "Action": [
-        "simspaceweaver:StartSimulation"
+        "simspaceweaver:StartSimulation",
+        "simspaceweaver:TagResource"
       ],
       "Resource": "*",
       "Condition": {

@@ -5,12 +5,17 @@
       "Sid": "Denydms",
       "Effect": "Deny",
       "Action": [
+        "dms:AddTagsToResource",
+        "dms:CreateDataMigration",
         "dms:CreateDataProvider",
         "dms:CreateEndpoint",
         "dms:CreateEventSubscription",
         "dms:CreateInstanceProfile",
+        "dms:CreateMigrationProject",
+        "dms:CreateReplicationConfig",
         "dms:CreateReplicationInstance",
         "dms:CreateReplicationSubnetGroup",
+        "dms:CreateReplicationTask",
         "dms:ImportCertificate"
       ],
       "Resource": "*",

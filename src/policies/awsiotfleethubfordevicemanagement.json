@@ -5,7 +5,8 @@
       "Sid": "Denyiotfleethub",
       "Effect": "Deny",
       "Action": [
-        "iotfleethub:CreateApplication"
+        "iotfleethub:CreateApplication",
+        "iotfleethub:TagResource"
       ],
       "Resource": "*",
       "Condition": {

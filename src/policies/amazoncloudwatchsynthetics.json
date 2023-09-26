@@ -6,7 +6,8 @@
       "Effect": "Deny",
       "Action": [
         "synthetics:CreateCanary",
-        "synthetics:CreateGroup"
+        "synthetics:CreateGroup",
+        "synthetics:TagResource"
       ],
       "Resource": "*",
       "Condition": {

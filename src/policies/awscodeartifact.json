@@ -6,7 +6,8 @@
       "Effect": "Deny",
       "Action": [
         "codeartifact:CreateDomain",
-        "codeartifact:CreateRepository"
+        "codeartifact:CreateRepository",
+        "codeartifact:TagResource"
       ],
       "Resource": "*",
       "Condition": {

@@ -5,7 +5,8 @@
       "Sid": "Denyacm-pca",
       "Effect": "Deny",
       "Action": [
-        "acm-pca:CreateCertificateAuthority"
+        "acm-pca:CreateCertificateAuthority",
+        "acm-pca:TagCertificateAuthority"
       ],
       "Resource": "*",
       "Condition": {

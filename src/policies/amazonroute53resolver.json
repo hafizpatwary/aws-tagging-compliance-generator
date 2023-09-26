@@ -5,7 +5,14 @@
       "Sid": "Denyroute53resolver",
       "Effect": "Deny",
       "Action": [
-        "route53resolver:CreateResolverQueryLogConfig"
+        "route53resolver:AssociateFirewallRuleGroup",
+        "route53resolver:CreateFirewallDomainList",
+        "route53resolver:CreateFirewallRuleGroup",
+        "route53resolver:CreateOutpostResolver",
+        "route53resolver:CreateResolverEndpoint",
+        "route53resolver:CreateResolverQueryLogConfig",
+        "route53resolver:CreateResolverRule",
+        "route53resolver:TagResource"
       ],
       "Resource": "*",
       "Condition": {

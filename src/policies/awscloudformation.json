@@ -5,7 +5,12 @@
       "Sid": "Denycloudformation",
       "Effect": "Deny",
       "Action": [
-        "cloudformation:CreateStackSet"
+        "cloudformation:CreateChangeSet",
+        "cloudformation:CreateStack",
+        "cloudformation:CreateStackSet",
+        "cloudformation:TagResource",
+        "cloudformation:UpdateStack",
+        "cloudformation:UpdateStackSet"
       ],
       "Resource": "*",
       "Condition": {

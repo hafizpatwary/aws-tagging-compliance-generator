@@ -6,7 +6,8 @@
       "Effect": "Deny",
       "Action": [
         "vendor-insights:CreateDataSource",
-        "vendor-insights:CreateSecurityProfile"
+        "vendor-insights:CreateSecurityProfile",
+        "vendor-insights:TagResource"
       ],
       "Resource": "*",
       "Condition": {

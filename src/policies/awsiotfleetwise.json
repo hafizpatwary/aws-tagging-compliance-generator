@@ -5,8 +5,15 @@
       "Sid": "Denyiotfleetwise",
       "Effect": "Deny",
       "Action": [
+        "iotfleetwise:BatchCreateVehicle",
+        "iotfleetwise:CreateCampaign",
+        "iotfleetwise:CreateDecoderManifest",
+        "iotfleetwise:CreateFleet",
+        "iotfleetwise:CreateModelManifest",
         "iotfleetwise:CreateSignalCatalog",
-        "iotfleetwise:ImportSignalCatalog"
+        "iotfleetwise:CreateVehicle",
+        "iotfleetwise:ImportSignalCatalog",
+        "iotfleetwise:TagResource"
       ],
       "Resource": "*",
       "Condition": {

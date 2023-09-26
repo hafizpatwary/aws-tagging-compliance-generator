@@ -6,7 +6,10 @@
       "Effect": "Deny",
       "Action": [
         "resiliencehub:CreateApp",
-        "resiliencehub:CreateResiliencyPolicy"
+        "resiliencehub:CreateRecommendationTemplate",
+        "resiliencehub:CreateResiliencyPolicy",
+        "resiliencehub:StartAppAssessment",
+        "resiliencehub:TagResource"
       ],
       "Resource": "*",
       "Condition": {

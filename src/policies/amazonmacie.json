@@ -5,7 +5,14 @@
       "Sid": "Denymacie2",
       "Effect": "Deny",
       "Action": [
-        "macie2:CreateAllowList"
+        "macie2:CreateAllowList",
+        "macie2:CreateClassificationJob",
+        "macie2:CreateCustomDataIdentifier",
+        "macie2:CreateFindingsFilter",
+        "macie2:CreateMember",
+        "macie2:TagResource",
+        "macie2:UpdateClassificationJob",
+        "macie2:UpdateFindingsFilter"
       ],
       "Resource": "*",
       "Condition": {

@@ -7,7 +7,9 @@
       "Action": [
         "ram:CreatePermission",
         "ram:CreateResourceShare",
-        "ram:GetResourceShares"
+        "ram:GetResourceShares",
+        "ram:TagResource",
+        "ram:UntagResource"
       ],
       "Resource": "*",
       "Condition": {

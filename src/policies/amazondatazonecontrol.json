@@ -6,7 +6,8 @@
       "Effect": "Deny",
       "Action": [
         "datazonecontrol:CreateDataSource",
-        "datazonecontrol:CreateEnvironment"
+        "datazonecontrol:CreateEnvironment",
+        "datazonecontrol:TagResource"
       ],
       "Resource": "*",
       "Condition": {

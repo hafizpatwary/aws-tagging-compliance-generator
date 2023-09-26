@@ -6,7 +6,11 @@
       "Effect": "Deny",
       "Action": [
         "managedblockchain:CreateAccessor",
-        "managedblockchain:CreateNetwork"
+        "managedblockchain:CreateMember",
+        "managedblockchain:CreateNetwork",
+        "managedblockchain:CreateNode",
+        "managedblockchain:CreateProposal",
+        "managedblockchain:TagResource"
       ],
       "Resource": "*",
       "Condition": {

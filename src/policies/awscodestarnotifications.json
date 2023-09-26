@@ -5,8 +5,17 @@
       "Sid": "Denycodestar-notifications",
       "Effect": "Deny",
       "Action": [
+        "codestar-notifications:CreateNotificationRule",
+        "codestar-notifications:DeleteNotificationRule",
         "codestar-notifications:DeleteTarget",
-        "codestar-notifications:ListTargets"
+        "codestar-notifications:DescribeNotificationRule",
+        "codestar-notifications:ListTagsForResource",
+        "codestar-notifications:ListTargets",
+        "codestar-notifications:Subscribe",
+        "codestar-notifications:TagResource",
+        "codestar-notifications:Unsubscribe",
+        "codestar-notifications:UntagResource",
+        "codestar-notifications:UpdateNotificationRule"
       ],
       "Resource": "*",
       "Condition": {

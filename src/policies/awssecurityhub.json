@@ -5,7 +5,8 @@
       "Sid": "Denysecurityhub",
       "Effect": "Deny",
       "Action": [
-        "securityhub:CreateAutomationRule"
+        "securityhub:CreateAutomationRule",
+        "securityhub:EnableSecurityHub"
       ],
       "Resource": "*",
       "Condition": {

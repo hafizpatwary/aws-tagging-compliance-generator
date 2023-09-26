@@ -5,7 +5,9 @@
       "Sid": "Denysecuritylake",
       "Effect": "Deny",
       "Action": [
-        "securitylake:CreateSubscriber"
+        "securitylake:CreateDataLake",
+        "securitylake:CreateSubscriber",
+        "securitylake:TagResource"
       ],
       "Resource": "*",
       "Condition": {

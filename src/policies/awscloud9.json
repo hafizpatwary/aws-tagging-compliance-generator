@@ -6,7 +6,9 @@
       "Effect": "Deny",
       "Action": [
         "cloud9:CreateEnvironmentEC2",
-        "cloud9:CreateEnvironmentSSH"
+        "cloud9:CreateEnvironmentSSH",
+        "cloud9:TagResource",
+        "cloud9:UntagResource"
       ],
       "Resource": "*",
       "Condition": {

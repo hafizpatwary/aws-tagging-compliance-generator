@@ -6,7 +6,8 @@
       "Effect": "Deny",
       "Action": [
         "braket:CreateJob",
-        "braket:CreateQuantumTask"
+        "braket:CreateQuantumTask",
+        "braket:TagResource"
       ],
       "Resource": "*",
       "Condition": {

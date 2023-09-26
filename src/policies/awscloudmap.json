@@ -8,6 +8,7 @@
         "servicediscovery:CreateHttpNamespace",
         "servicediscovery:CreatePrivateDnsNamespace",
         "servicediscovery:CreatePublicDnsNamespace",
+        "servicediscovery:CreateService",
         "servicediscovery:TagResource",
         "servicediscovery:UntagResource"
       ],

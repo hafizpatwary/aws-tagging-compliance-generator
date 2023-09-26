@@ -5,7 +5,10 @@
       "Sid": "Denyelasticfilesystem",
       "Effect": "Deny",
       "Action": [
-        "elasticfilesystem:CreateFileSystem"
+        "elasticfilesystem:CreateAccessPoint",
+        "elasticfilesystem:CreateFileSystem",
+        "elasticfilesystem:CreateTags",
+        "elasticfilesystem:TagResource"
       ],
       "Resource": "*",
       "Condition": {

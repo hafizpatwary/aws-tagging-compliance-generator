@@ -5,7 +5,8 @@
       "Sid": "Denyappsync",
       "Effect": "Deny",
       "Action": [
-        "appsync:CreateGraphqlApi"
+        "appsync:CreateGraphqlApi",
+        "appsync:TagResource"
       ],
       "Resource": "*",
       "Condition": {

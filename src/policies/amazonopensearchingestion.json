@@ -5,7 +5,9 @@
       "Sid": "Denyosis",
       "Effect": "Deny",
       "Action": [
-        "osis:CreatePipeline"
+        "osis:CreatePipeline",
+        "osis:TagResource",
+        "osis:UntagResource"
       ],
       "Resource": "*",
       "Condition": {

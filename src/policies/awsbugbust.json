@@ -5,7 +5,9 @@
       "Sid": "Denybugbust",
       "Effect": "Deny",
       "Action": [
-        "bugbust:CreateEvent"
+        "bugbust:CreateEvent",
+        "bugbust:TagResource",
+        "bugbust:UntagResource"
       ],
       "Resource": "*",
       "Condition": {

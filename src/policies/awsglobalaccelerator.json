@@ -6,7 +6,8 @@
       "Effect": "Deny",
       "Action": [
         "globalaccelerator:CreateAccelerator",
-        "globalaccelerator:CreateCustomRoutingAccelerator"
+        "globalaccelerator:CreateCustomRoutingAccelerator",
+        "globalaccelerator:TagResource"
       ],
       "Resource": "*",
       "Condition": {

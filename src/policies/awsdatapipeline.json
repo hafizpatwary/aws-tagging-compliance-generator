@@ -5,7 +5,9 @@
       "Sid": "Denydatapipeline",
       "Effect": "Deny",
       "Action": [
-        "datapipeline:CreatePipeline"
+        "datapipeline:AddTags",
+        "datapipeline:CreatePipeline",
+        "datapipeline:RemoveTags"
       ],
       "Resource": "*",
       "Condition": {

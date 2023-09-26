@@ -5,7 +5,9 @@
       "Sid": "Denyecr",
       "Effect": "Deny",
       "Action": [
-        "ecr:CreateRepository"
+        "ecr:CreateRepository",
+        "ecr:ListTagsForResource",
+        "ecr:TagResource"
       ],
       "Resource": "*",
       "Condition": {

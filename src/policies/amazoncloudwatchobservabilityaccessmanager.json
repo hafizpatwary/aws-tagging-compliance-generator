@@ -5,7 +5,9 @@
       "Sid": "Denyoam",
       "Effect": "Deny",
       "Action": [
-        "oam:CreateSink"
+        "oam:CreateLink",
+        "oam:CreateSink",
+        "oam:TagResource"
       ],
       "Resource": "*",
       "Condition": {

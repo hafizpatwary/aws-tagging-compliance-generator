@@ -5,7 +5,8 @@
       "Sid": "Denyresource-groups",
       "Effect": "Deny",
       "Action": [
-        "resource-groups:CreateGroup"
+        "resource-groups:CreateGroup",
+        "resource-groups:Tag"
       ],
       "Resource": "*",
       "Condition": {

@@ -6,7 +6,10 @@
       "Effect": "Deny",
       "Action": [
         "wisdom:CreateAssistant",
+        "wisdom:CreateAssistantAssociation",
+        "wisdom:CreateContent",
         "wisdom:CreateKnowledgeBase",
+        "wisdom:CreateSession",
         "wisdom:TagResource"
       ],
       "Resource": "*",

@@ -6,8 +6,26 @@
       "Effect": "Deny",
       "Action": [
         "frauddetector:BatchCreateVariable",
+        "frauddetector:CreateBatchImportJob",
+        "frauddetector:CreateBatchPredictionJob",
+        "frauddetector:CreateDetectorVersion",
         "frauddetector:CreateList",
-        "frauddetector:CreateVariable"
+        "frauddetector:CreateModel",
+        "frauddetector:CreateModelVersion",
+        "frauddetector:CreateRule",
+        "frauddetector:CreateVariable",
+        "frauddetector:PutDetector",
+        "frauddetector:PutEntityType",
+        "frauddetector:PutEventType",
+        "frauddetector:PutExternalModel",
+        "frauddetector:PutLabel",
+        "frauddetector:PutOutcome",
+        "frauddetector:SendEvent",
+        "frauddetector:TagResource",
+        "frauddetector:UntagResource",
+        "frauddetector:UpdateEventLabel",
+        "frauddetector:UpdateModelVersion",
+        "frauddetector:UpdateRuleVersion"
       ],
       "Resource": "*",
       "Condition": {

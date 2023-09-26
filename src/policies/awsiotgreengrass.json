@@ -13,7 +13,9 @@
         "greengrass:CreateLoggerDefinition",
         "greengrass:CreateResourceDefinition",
         "greengrass:CreateSubscriptionDefinition",
-        "greengrass:StartBulkDeployment"
+        "greengrass:ListTagsForResource",
+        "greengrass:StartBulkDeployment",
+        "greengrass:TagResource"
       ],
       "Resource": "*",
       "Condition": {

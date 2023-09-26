@@ -6,7 +6,9 @@
       "Effect": "Deny",
       "Action": [
         "ssm-incidents:CreateReplicationSet",
-        "ssm-incidents:CreateResponsePlan"
+        "ssm-incidents:CreateResponsePlan",
+        "ssm-incidents:TagResource",
+        "ssm-incidents:UpdateResponsePlan"
       ],
       "Resource": "*",
       "Condition": {

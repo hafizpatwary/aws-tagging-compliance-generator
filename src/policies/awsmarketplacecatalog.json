@@ -1,0 +1,20 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Denyaws-marketplace",
+      "Effect": "Deny",
+      "Action": [
+        "aws-marketplace:StartChangeSet",
+        "aws-marketplace:TagResource"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "Null": {
+          "aws:RequestTag/team": "true",
+          "aws:RequestTag/cost-centre": "true"
+        }
+      }
+    }
+  ]
+}

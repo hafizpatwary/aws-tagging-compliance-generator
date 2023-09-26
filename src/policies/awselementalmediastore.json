@@ -5,7 +5,9 @@
       "Sid": "Denymediastore",
       "Effect": "Deny",
       "Action": [
-        "mediastore:CreateContainer"
+        "mediastore:CreateContainer",
+        "mediastore:TagResource",
+        "mediastore:UntagResource"
       ],
       "Resource": "*",
       "Condition": {

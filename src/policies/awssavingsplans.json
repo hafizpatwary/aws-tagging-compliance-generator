@@ -5,7 +5,8 @@
       "Sid": "Denysavingsplans",
       "Effect": "Deny",
       "Action": [
-        "savingsplans:CreateSavingsPlan"
+        "savingsplans:CreateSavingsPlan",
+        "savingsplans:TagResource"
       ],
       "Resource": "*",
       "Condition": {

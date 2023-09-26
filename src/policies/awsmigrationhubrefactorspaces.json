@@ -8,7 +8,9 @@
         "refactor-spaces:CreateApplication",
         "refactor-spaces:CreateEnvironment",
         "refactor-spaces:CreateRoute",
-        "refactor-spaces:CreateService"
+        "refactor-spaces:CreateService",
+        "refactor-spaces:TagResource",
+        "refactor-spaces:UntagResource"
       ],
       "Resource": "*",
       "Condition": {

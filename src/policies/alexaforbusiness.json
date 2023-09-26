@@ -12,8 +12,11 @@
         "a4b:CreateGatewayGroup",
         "a4b:CreateNetworkProfile",
         "a4b:CreateProfile",
+        "a4b:CreateRoom",
         "a4b:CreateSkillGroup",
-        "a4b:RegisterAVSDevice"
+        "a4b:CreateUser",
+        "a4b:RegisterAVSDevice",
+        "a4b:TagResource"
       ],
       "Resource": "*",
       "Condition": {

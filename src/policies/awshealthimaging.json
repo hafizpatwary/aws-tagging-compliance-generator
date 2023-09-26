@@ -5,7 +5,8 @@
       "Sid": "Denymedical-imaging",
       "Effect": "Deny",
       "Action": [
-        "medical-imaging:CreateDatastore"
+        "medical-imaging:CreateDatastore",
+        "medical-imaging:TagResource"
       ],
       "Resource": "*",
       "Condition": {

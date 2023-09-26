@@ -5,12 +5,18 @@
       "Sid": "Denyssm",
       "Effect": "Deny",
       "Action": [
+        "ssm:AddTagsToResource",
         "ssm:CreateActivation",
+        "ssm:CreateAssociation",
+        "ssm:CreateDocument",
         "ssm:CreateMaintenanceWindow",
         "ssm:CreateOpsItem",
         "ssm:CreateOpsMetadata",
         "ssm:CreatePatchBaseline",
-        "ssm:RegisterManagedInstance"
+        "ssm:PutParameter",
+        "ssm:RegisterManagedInstance",
+        "ssm:StartAutomationExecution",
+        "ssm:StartChangeRequestExecution"
       ],
       "Resource": "*",
       "Condition": {

@@ -11,7 +11,8 @@
         "databrew:CreateRecipe",
         "databrew:CreateRecipeJob",
         "databrew:CreateRuleset",
-        "databrew:CreateSchedule"
+        "databrew:CreateSchedule",
+        "databrew:TagResource"
       ],
       "Resource": "*",
       "Condition": {

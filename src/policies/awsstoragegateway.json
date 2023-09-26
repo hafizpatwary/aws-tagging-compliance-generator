@@ -6,7 +6,18 @@
       "Effect": "Deny",
       "Action": [
         "storagegateway:ActivateGateway",
-        "storagegateway:CreateTapePool"
+        "storagegateway:AddTagsToResource",
+        "storagegateway:AssociateFileSystem",
+        "storagegateway:CreateCachediSCSIVolume",
+        "storagegateway:CreateNFSFileShare",
+        "storagegateway:CreateSMBFileShare",
+        "storagegateway:CreateSnapshot",
+        "storagegateway:CreateSnapshotFromVolumeRecoveryPoint",
+        "storagegateway:CreateStorediSCSIVolume",
+        "storagegateway:CreateTapePool",
+        "storagegateway:CreateTapeWithBarcode",
+        "storagegateway:CreateTapes",
+        "storagegateway:UpdateSnapshotSchedule"
       ],
       "Resource": "*",
       "Condition": {

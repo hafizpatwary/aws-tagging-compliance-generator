@@ -7,7 +7,9 @@
       "Action": [
         "ses:CreateConfigurationSet",
         "ses:CreateDedicatedIpPool",
-        "ses:CreateEmailIdentity"
+        "ses:CreateDeliverabilityTestReport",
+        "ses:CreateEmailIdentity",
+        "ses:TagResource"
       ],
       "Resource": "*",
       "Condition": {

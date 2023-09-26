@@ -6,7 +6,9 @@
       "Effect": "Deny",
       "Action": [
         "snow-device-management:CreateTask",
-        "snow-device-management:ListTagsForResource"
+        "snow-device-management:ListTagsForResource",
+        "snow-device-management:TagResource",
+        "snow-device-management:UntagResource"
       ],
       "Resource": "*",
       "Condition": {

@@ -6,7 +6,9 @@
       "Effect": "Deny",
       "Action": [
         "resource-explorer-2:CreateIndex",
-        "resource-explorer-2:CreateView"
+        "resource-explorer-2:CreateView",
+        "resource-explorer-2:TagResource",
+        "resource-explorer-2:UntagResource"
       ],
       "Resource": "*",
       "Condition": {

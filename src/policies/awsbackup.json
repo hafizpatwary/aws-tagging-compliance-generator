@@ -5,7 +5,14 @@
       "Sid": "Denybackup",
       "Effect": "Deny",
       "Action": [
-        "backup:CopyIntoBackupVault"
+        "backup:CopyIntoBackupVault",
+        "backup:CreateBackupPlan",
+        "backup:CreateBackupVault",
+        "backup:CreateFramework",
+        "backup:CreateLegalHold",
+        "backup:CreateLogicallyAirGappedBackupVault",
+        "backup:CreateReportPlan",
+        "backup:TagResource"
       ],
       "Resource": "*",
       "Condition": {

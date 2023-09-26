@@ -5,9 +5,13 @@
       "Sid": "Denybillingconductor",
       "Effect": "Deny",
       "Action": [
+        "billingconductor:CreateBillingGroup",
         "billingconductor:CreateCustomLineItem",
         "billingconductor:CreatePricingPlan",
-        "billingconductor:CreatePricingRule"
+        "billingconductor:CreatePricingRule",
+        "billingconductor:ListTagsForResource",
+        "billingconductor:TagResource",
+        "billingconductor:UntagResource"
       ],
       "Resource": "*",
       "Condition": {

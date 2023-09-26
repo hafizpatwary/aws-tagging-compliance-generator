@@ -5,7 +5,10 @@
       "Sid": "Denymonitron",
       "Effect": "Deny",
       "Action": [
-        "monitron:CreateProject"
+        "monitron:CreateProject",
+        "monitron:ListTagsForResource",
+        "monitron:TagResource",
+        "monitron:UpdateProject"
       ],
       "Resource": "*",
       "Condition": {

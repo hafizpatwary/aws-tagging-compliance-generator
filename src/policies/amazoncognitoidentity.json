@@ -5,7 +5,8 @@
       "Sid": "Denycognito-identity",
       "Effect": "Deny",
       "Action": [
-        "cognito-identity:CreateIdentityPool"
+        "cognito-identity:CreateIdentityPool",
+        "cognito-identity:TagResource"
       ],
       "Resource": "*",
       "Condition": {

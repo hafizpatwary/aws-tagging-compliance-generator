@@ -5,6 +5,7 @@
       "Sid": "Denyfreertos",
       "Effect": "Deny",
       "Action": [
+        "freertos:CreateSoftwareConfiguration",
         "freertos:CreateSubscription"
       ],
       "Resource": "*",

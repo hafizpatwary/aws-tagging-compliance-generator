@@ -5,7 +5,12 @@
       "Sid": "Denyiottwinmaker",
       "Effect": "Deny",
       "Action": [
-        "iottwinmaker:CreateWorkspace"
+        "iottwinmaker:CreateComponentType",
+        "iottwinmaker:CreateEntity",
+        "iottwinmaker:CreateScene",
+        "iottwinmaker:CreateSyncJob",
+        "iottwinmaker:CreateWorkspace",
+        "iottwinmaker:TagResource"
       ],
       "Resource": "*",
       "Condition": {

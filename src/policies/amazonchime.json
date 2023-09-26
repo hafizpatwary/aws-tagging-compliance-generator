@@ -8,15 +8,20 @@
         "chime:CreateAppInstance",
         "chime:CreateAppInstanceBot",
         "chime:CreateAppInstanceUser",
+        "chime:CreateChannel",
+        "chime:CreateChannelFlow",
         "chime:CreateMediaCapturePipeline",
         "chime:CreateMediaConcatenationPipeline",
+        "chime:CreateMediaInsightsPipeline",
         "chime:CreateMediaInsightsPipelineConfiguration",
         "chime:CreateMediaLiveConnectorPipeline",
         "chime:CreateMeeting",
         "chime:CreateMeetingWithAttendees",
         "chime:CreateSipMediaApplication",
         "chime:CreateVoiceConnector",
-        "chime:CreateVoiceProfileDomain"
+        "chime:CreateVoiceProfileDomain",
+        "chime:TagMeeting",
+        "chime:TagResource"
       ],
       "Resource": "*",
       "Condition": {

@@ -11,7 +11,9 @@
         "workspaces-web:CreatePortal",
         "workspaces-web:CreateTrustStore",
         "workspaces-web:CreateUserAccessLoggingSettings",
-        "workspaces-web:CreateUserSettings"
+        "workspaces-web:CreateUserSettings",
+        "workspaces-web:TagResource",
+        "workspaces-web:UntagResource"
       ],
       "Resource": "*",
       "Condition": {

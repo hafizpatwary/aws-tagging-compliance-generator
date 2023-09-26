@@ -5,7 +5,13 @@
       "Sid": "Denyconnect-campaigns",
       "Effect": "Deny",
       "Action": [
-        "connect-campaigns:ListCampaigns"
+        "connect-campaigns:CreateCampaign",
+        "connect-campaigns:DescribeCampaign",
+        "connect-campaigns:GetCampaignState",
+        "connect-campaigns:GetCampaignStateBatch",
+        "connect-campaigns:ListCampaigns",
+        "connect-campaigns:TagResource",
+        "connect-campaigns:UntagResource"
       ],
       "Resource": "*",
       "Condition": {

@@ -9,7 +9,9 @@
         "mediatailor:CreateLiveSource",
         "mediatailor:CreateSourceLocation",
         "mediatailor:CreateVodSource",
-        "mediatailor:PutPlaybackConfiguration"
+        "mediatailor:PutPlaybackConfiguration",
+        "mediatailor:TagResource",
+        "mediatailor:UntagResource"
       ],
       "Resource": "*",
       "Condition": {

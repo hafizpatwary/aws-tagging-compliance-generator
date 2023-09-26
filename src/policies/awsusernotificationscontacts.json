@@ -5,7 +5,8 @@
       "Sid": "Denynotifications-contacts",
       "Effect": "Deny",
       "Action": [
-        "notifications-contacts:CreateEmailContact"
+        "notifications-contacts:CreateEmailContact",
+        "notifications-contacts:TagResource"
       ],
       "Resource": "*",
       "Condition": {

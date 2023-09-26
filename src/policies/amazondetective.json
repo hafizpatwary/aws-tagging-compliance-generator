@@ -5,7 +5,8 @@
       "Sid": "Denydetective",
       "Effect": "Deny",
       "Action": [
-        "detective:CreateGraph"
+        "detective:CreateGraph",
+        "detective:TagResource"
       ],
       "Resource": "*",
       "Condition": {

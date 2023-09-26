@@ -6,7 +6,12 @@
       "Effect": "Deny",
       "Action": [
         "payment-cryptography:CreateKey",
-        "payment-cryptography:ImportKey"
+        "payment-cryptography:DeleteAlias",
+        "payment-cryptography:GetAlias",
+        "payment-cryptography:ImportKey",
+        "payment-cryptography:TagResource",
+        "payment-cryptography:UntagResource",
+        "payment-cryptography:UpdateAlias"
       ],
       "Resource": "*",
       "Condition": {

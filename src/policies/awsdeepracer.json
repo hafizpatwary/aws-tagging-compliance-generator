@@ -5,8 +5,14 @@
       "Sid": "Denydeepracer",
       "Effect": "Deny",
       "Action": [
+        "deepracer:CloneReinforcementLearningModel",
         "deepracer:CreateCar",
-        "deepracer:CreateLeaderboard"
+        "deepracer:CreateLeaderboard",
+        "deepracer:CreateLeaderboardSubmission",
+        "deepracer:CreateReinforcementLearningModel",
+        "deepracer:StartEvaluation",
+        "deepracer:TagResource",
+        "deepracer:UntagResource"
       ],
       "Resource": "*",
       "Condition": {

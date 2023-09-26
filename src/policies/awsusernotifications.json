@@ -5,7 +5,8 @@
       "Sid": "Denynotifications",
       "Effect": "Deny",
       "Action": [
-        "notifications:CreateNotificationConfiguration"
+        "notifications:CreateNotificationConfiguration",
+        "notifications:TagResource"
       ],
       "Resource": "*",
       "Condition": {

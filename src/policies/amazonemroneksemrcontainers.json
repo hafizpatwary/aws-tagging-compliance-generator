@@ -6,7 +6,10 @@
       "Effect": "Deny",
       "Action": [
         "emr-containers:CreateJobTemplate",
-        "emr-containers:CreateVirtualCluster"
+        "emr-containers:CreateManagedEndpoint",
+        "emr-containers:CreateVirtualCluster",
+        "emr-containers:StartJobRun",
+        "emr-containers:TagResource"
       ],
       "Resource": "*",
       "Condition": {

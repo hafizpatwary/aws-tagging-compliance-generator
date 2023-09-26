@@ -7,8 +7,14 @@
       "Action": [
         "ecs:CreateCapacityProvider",
         "ecs:CreateCluster",
+        "ecs:CreateService",
         "ecs:CreateTaskSet",
-        "ecs:RegisterTaskDefinition"
+        "ecs:RegisterContainerInstance",
+        "ecs:RegisterTaskDefinition",
+        "ecs:RunTask",
+        "ecs:StartTask",
+        "ecs:TagResource",
+        "ecs:UntagResource"
       ],
       "Resource": "*",
       "Condition": {

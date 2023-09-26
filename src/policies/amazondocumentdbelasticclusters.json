@@ -5,7 +5,10 @@
       "Sid": "Denydocdb-elastic",
       "Effect": "Deny",
       "Action": [
-        "docdb-elastic:CreateCluster"
+        "docdb-elastic:CreateCluster",
+        "docdb-elastic:CreateClusterSnapshot",
+        "docdb-elastic:RestoreClusterFromSnapshot",
+        "docdb-elastic:TagResource"
       ],
       "Resource": "*",
       "Condition": {

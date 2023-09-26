@@ -5,7 +5,9 @@
       "Sid": "Denycognito-idp",
       "Effect": "Deny",
       "Action": [
-        "cognito-idp:CreateUserPool"
+        "cognito-idp:CreateUserPool",
+        "cognito-idp:TagResource",
+        "cognito-idp:UpdateUserPool"
       ],
       "Resource": "*",
       "Condition": {

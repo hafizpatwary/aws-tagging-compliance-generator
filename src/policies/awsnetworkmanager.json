@@ -5,7 +5,20 @@
       "Sid": "Denynetworkmanager",
       "Effect": "Deny",
       "Action": [
-        "networkmanager:CreateGlobalNetwork"
+        "networkmanager:CreateConnectAttachment",
+        "networkmanager:CreateConnectPeer",
+        "networkmanager:CreateConnection",
+        "networkmanager:CreateCoreNetwork",
+        "networkmanager:CreateDevice",
+        "networkmanager:CreateGlobalNetwork",
+        "networkmanager:CreateLink",
+        "networkmanager:CreateSite",
+        "networkmanager:CreateSiteToSiteVpnAttachment",
+        "networkmanager:CreateTransitGatewayPeering",
+        "networkmanager:CreateTransitGatewayRouteTableAttachment",
+        "networkmanager:CreateVpcAttachment",
+        "networkmanager:TagResource",
+        "networkmanager:UpdateVpcAttachment"
       ],
       "Resource": "*",
       "Condition": {

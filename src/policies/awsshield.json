@@ -6,7 +6,9 @@
       "Effect": "Deny",
       "Action": [
         "shield:CreateProtection",
-        "shield:CreateProtectionGroup"
+        "shield:CreateProtectionGroup",
+        "shield:TagResource",
+        "shield:UntagResource"
       ],
       "Resource": "*",
       "Condition": {

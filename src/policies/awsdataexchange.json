@@ -5,7 +5,9 @@
       "Sid": "Denydataexchange",
       "Effect": "Deny",
       "Action": [
-        "dataexchange:CreateDataSet"
+        "dataexchange:CreateDataSet",
+        "dataexchange:CreateRevision",
+        "dataexchange:TagResource"
       ],
       "Resource": "*",
       "Condition": {

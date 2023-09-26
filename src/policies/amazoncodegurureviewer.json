@@ -5,7 +5,9 @@
       "Sid": "Denycodeguru-reviewer",
       "Effect": "Deny",
       "Action": [
-        "codeguru-reviewer:AssociateRepository"
+        "codeguru-reviewer:AssociateRepository",
+        "codeguru-reviewer:TagResource",
+        "codeguru-reviewer:UnTagResource"
       ],
       "Resource": "*",
       "Condition": {

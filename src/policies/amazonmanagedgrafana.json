@@ -5,7 +5,9 @@
       "Sid": "Denygrafana",
       "Effect": "Deny",
       "Action": [
-        "grafana:CreateWorkspace"
+        "grafana:CreateWorkspace",
+        "grafana:TagResource",
+        "grafana:UntagResource"
       ],
       "Resource": "*",
       "Condition": {

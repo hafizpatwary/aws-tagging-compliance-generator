@@ -5,7 +5,8 @@
       "Sid": "Denydevicefarm",
       "Effect": "Deny",
       "Action": [
-        "devicefarm:CreateProject"
+        "devicefarm:CreateProject",
+        "devicefarm:TagResource"
       ],
       "Resource": "*",
       "Condition": {

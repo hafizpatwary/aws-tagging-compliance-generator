@@ -5,9 +5,15 @@
       "Sid": "Denymemorydb",
       "Effect": "Deny",
       "Action": [
+        "memorydb:CopySnapshot",
+        "memorydb:CreateAcl",
+        "memorydb:CreateCluster",
         "memorydb:CreateParameterGroup",
+        "memorydb:CreateSnapshot",
         "memorydb:CreateSubnetGroup",
-        "memorydb:CreateUser"
+        "memorydb:CreateUser",
+        "memorydb:PurchaseReservedNodesOffering",
+        "memorydb:TagResource"
       ],
       "Resource": "*",
       "Condition": {

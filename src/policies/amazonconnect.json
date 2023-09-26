@@ -5,7 +5,26 @@
       "Sid": "Denyconnect",
       "Effect": "Deny",
       "Action": [
-        "connect:CreateInstance"
+        "connect:ClaimPhoneNumber",
+        "connect:CreateAgentStatus",
+        "connect:CreateContactFlow",
+        "connect:CreateContactFlowModule",
+        "connect:CreateHoursOfOperation",
+        "connect:CreateInstance",
+        "connect:CreateIntegrationAssociation",
+        "connect:CreatePrompt",
+        "connect:CreateQueue",
+        "connect:CreateQuickConnect",
+        "connect:CreateRoutingProfile",
+        "connect:CreateSecurityProfile",
+        "connect:CreateTrafficDistributionGroup",
+        "connect:CreateUseCase",
+        "connect:CreateUser",
+        "connect:CreateUserHierarchyGroup",
+        "connect:CreateView",
+        "connect:CreateVocabulary",
+        "connect:ReplicateInstance",
+        "connect:TagResource"
       ],
       "Resource": "*",
       "Condition": {

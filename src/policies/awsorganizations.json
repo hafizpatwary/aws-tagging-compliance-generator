@@ -7,7 +7,11 @@
       "Action": [
         "organizations:CreateAccount",
         "organizations:CreateGovCloudAccount",
-        "organizations:CreatePolicy"
+        "organizations:CreateOrganizationalUnit",
+        "organizations:CreatePolicy",
+        "organizations:InviteAccountToOrganization",
+        "organizations:PutResourcePolicy",
+        "organizations:TagResource"
       ],
       "Resource": "*",
       "Condition": {

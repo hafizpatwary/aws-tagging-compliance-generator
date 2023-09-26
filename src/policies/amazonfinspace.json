@@ -5,7 +5,13 @@
       "Sid": "Denyfinspace",
       "Effect": "Deny",
       "Action": [
-        "finspace:CreateKxEnvironment"
+        "finspace:CreateEnvironment",
+        "finspace:CreateKxCluster",
+        "finspace:CreateKxDatabase",
+        "finspace:CreateKxEnvironment",
+        "finspace:CreateKxUser",
+        "finspace:CreateUser",
+        "finspace:TagResource"
       ],
       "Resource": "*",
       "Condition": {

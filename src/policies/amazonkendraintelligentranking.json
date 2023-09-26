@@ -5,7 +5,8 @@
       "Sid": "Denykendra-ranking",
       "Effect": "Deny",
       "Action": [
-        "kendra-ranking:CreateRescoreExecutionPlan"
+        "kendra-ranking:CreateRescoreExecutionPlan",
+        "kendra-ranking:TagResource"
       ],
       "Resource": "*",
       "Condition": {

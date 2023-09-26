@@ -10,10 +10,12 @@
         "iotwireless:CreateDeviceProfile",
         "iotwireless:CreateFuotaTask",
         "iotwireless:CreateMulticastGroup",
+        "iotwireless:CreateNetworkAnalyzerConfiguration",
         "iotwireless:CreateServiceProfile",
         "iotwireless:CreateWirelessDevice",
         "iotwireless:CreateWirelessGateway",
-        "iotwireless:CreateWirelessGatewayTaskDefinition"
+        "iotwireless:CreateWirelessGatewayTaskDefinition",
+        "iotwireless:TagResource"
       ],
       "Resource": "*",
       "Condition": {

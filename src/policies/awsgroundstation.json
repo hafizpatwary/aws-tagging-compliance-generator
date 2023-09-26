@@ -9,7 +9,8 @@
         "groundstation:CreateDataflowEndpointGroup",
         "groundstation:CreateEphemeris",
         "groundstation:CreateMissionProfile",
-        "groundstation:ReserveContact"
+        "groundstation:ReserveContact",
+        "groundstation:TagResource"
       ],
       "Resource": "*",
       "Condition": {

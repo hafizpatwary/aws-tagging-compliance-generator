@@ -7,7 +7,9 @@
       "Action": [
         "rolesanywhere:CreateProfile",
         "rolesanywhere:CreateTrustAnchor",
-        "rolesanywhere:ImportCrl"
+        "rolesanywhere:ImportCrl",
+        "rolesanywhere:TagResource",
+        "rolesanywhere:UntagResource"
       ],
       "Resource": "*",
       "Condition": {

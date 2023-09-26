@@ -5,8 +5,11 @@
       "Sid": "Denyelasticmapreduce",
       "Effect": "Deny",
       "Action": [
+        "elasticmapreduce:AddTags",
+        "elasticmapreduce:CreateEditor",
         "elasticmapreduce:CreateStudio",
-        "elasticmapreduce:RunJobFlow"
+        "elasticmapreduce:RunJobFlow",
+        "elasticmapreduce:StartNotebookExecution"
       ],
       "Resource": "*",
       "Condition": {

@@ -1,0 +1,24 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Denyroute53-recovery-readiness",
+      "Effect": "Deny",
+      "Action": [
+        "route53-recovery-readiness:CreateCell",
+        "route53-recovery-readiness:CreateReadinessCheck",
+        "route53-recovery-readiness:CreateRecoveryGroup",
+        "route53-recovery-readiness:CreateResourceSet",
+        "route53-recovery-readiness:TagResource",
+        "route53-recovery-readiness:UntagResource"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "Null": {
+          "aws:RequestTag/team": "true",
+          "aws:RequestTag/cost-centre": "true"
+        }
+      }
+    }
+  ]
+}

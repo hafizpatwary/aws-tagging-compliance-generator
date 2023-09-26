@@ -11,8 +11,11 @@
         "robomaker:CreateRobotApplication",
         "robomaker:CreateSimulationApplication",
         "robomaker:CreateSimulationJob",
+        "robomaker:CreateWorldExportJob",
+        "robomaker:CreateWorldGenerationJob",
         "robomaker:CreateWorldTemplate",
-        "robomaker:StartSimulationJobBatch"
+        "robomaker:StartSimulationJobBatch",
+        "robomaker:TagResource"
       ],
       "Resource": "*",
       "Condition": {

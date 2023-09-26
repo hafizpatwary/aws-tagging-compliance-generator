@@ -9,7 +9,9 @@
         "evidently:CreateFeature",
         "evidently:CreateLaunch",
         "evidently:CreateProject",
-        "evidently:CreateSegment"
+        "evidently:CreateSegment",
+        "evidently:TagResource",
+        "evidently:UntagResource"
       ],
       "Resource": "*",
       "Condition": {

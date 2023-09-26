@@ -5,7 +5,11 @@
       "Sid": "Denyaps",
       "Effect": "Deny",
       "Action": [
-        "aps:CreateWorkspace"
+        "aps:CreateRuleGroupsNamespace",
+        "aps:CreateWorkspace",
+        "aps:ListTagsForResource",
+        "aps:TagResource",
+        "aps:UntagResource"
       ],
       "Resource": "*",
       "Condition": {

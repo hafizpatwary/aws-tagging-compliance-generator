@@ -1,0 +1,21 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "Denycodedeploy",
+      "Effect": "Deny",
+      "Action": [
+        "codedeploy:CreateApplication",
+        "codedeploy:CreateDeploymentGroup",
+        "codedeploy:TagResource"
+      ],
+      "Resource": "*",
+      "Condition": {
+        "Null": {
+          "aws:RequestTag/team": "true",
+          "aws:RequestTag/cost-centre": "true"
+        }
+      }
+    }
+  ]
+}

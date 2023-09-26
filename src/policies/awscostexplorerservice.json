@@ -7,7 +7,8 @@
       "Action": [
         "ce:CreateAnomalyMonitor",
         "ce:CreateAnomalySubscription",
-        "ce:CreateCostCategoryDefinition"
+        "ce:CreateCostCategoryDefinition",
+        "ce:TagResource"
       ],
       "Resource": "*",
       "Condition": {

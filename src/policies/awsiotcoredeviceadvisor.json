@@ -6,7 +6,8 @@
       "Effect": "Deny",
       "Action": [
         "iotdeviceadvisor:CreateSuiteDefinition",
-        "iotdeviceadvisor:StartSuiteRun"
+        "iotdeviceadvisor:StartSuiteRun",
+        "iotdeviceadvisor:TagResource"
       ],
       "Resource": "*",
       "Condition": {

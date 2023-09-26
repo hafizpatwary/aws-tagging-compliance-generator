@@ -6,7 +6,11 @@
       "Effect": "Deny",
       "Action": [
         "cloudwatch:ListManagedInsightRules",
+        "cloudwatch:PutCompositeAlarm",
+        "cloudwatch:PutInsightRule",
         "cloudwatch:PutManagedInsightRules",
+        "cloudwatch:PutMetricAlarm",
+        "cloudwatch:PutMetricStream",
         "cloudwatch:TagResource"
       ],
       "Resource": "*",

@@ -6,7 +6,10 @@
       "Effect": "Deny",
       "Action": [
         "appflow:CreateFlow",
-        "appflow:RegisterConnector"
+        "appflow:DeleteFlow",
+        "appflow:RegisterConnector",
+        "appflow:TagResource",
+        "appflow:UnRegisterConnector"
       ],
       "Resource": "*",
       "Condition": {

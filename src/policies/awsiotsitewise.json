@@ -5,9 +5,15 @@
       "Sid": "Denyiotsitewise",
       "Effect": "Deny",
       "Action": [
+        "iotsitewise:CreateAccessPolicy",
+        "iotsitewise:CreateAsset",
         "iotsitewise:CreateAssetModel",
+        "iotsitewise:CreateDashboard",
         "iotsitewise:CreateGateway",
-        "iotsitewise:CreatePortal"
+        "iotsitewise:CreatePortal",
+        "iotsitewise:CreateProject",
+        "iotsitewise:DescribeTimeSeries",
+        "iotsitewise:TagResource"
       ],
       "Resource": "*",
       "Condition": {

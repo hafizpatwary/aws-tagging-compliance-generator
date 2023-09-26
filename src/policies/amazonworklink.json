@@ -5,7 +5,10 @@
       "Sid": "Denyworklink",
       "Effect": "Deny",
       "Action": [
-        "worklink:CreateFleet"
+        "worklink:CreateFleet",
+        "worklink:DeleteFleet",
+        "worklink:DescribeFleetMetadata",
+        "worklink:TagResource"
       ],
       "Resource": "*",
       "Condition": {

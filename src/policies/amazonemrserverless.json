@@ -5,7 +5,9 @@
       "Sid": "Denyemr-serverless",
       "Effect": "Deny",
       "Action": [
-        "emr-serverless:CreateApplication"
+        "emr-serverless:CreateApplication",
+        "emr-serverless:StartJobRun",
+        "emr-serverless:TagResource"
       ],
       "Resource": "*",
       "Condition": {

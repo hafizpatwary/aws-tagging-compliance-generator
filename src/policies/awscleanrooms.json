@@ -6,11 +6,15 @@
       "Effect": "Deny",
       "Action": [
         "cleanrooms:CreateAnalysisTemplate",
+        "cleanrooms:CreateAnalysisTemplate",
         "cleanrooms:CreateCollaboration",
         "cleanrooms:CreateConfiguredTable",
         "cleanrooms:CreateConfiguredTableAssociation",
         "cleanrooms:CreateConfiguredTableAssociation",
-        "cleanrooms:CreateMembership"
+        "cleanrooms:CreateConfiguredTableAssociation",
+        "cleanrooms:CreateMembership",
+        "cleanrooms:CreateMembership",
+        "cleanrooms:TagResource"
       ],
       "Resource": "*",
       "Condition": {

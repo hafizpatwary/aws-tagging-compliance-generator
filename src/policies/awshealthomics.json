@@ -9,7 +9,8 @@
         "omics:CreateRunGroup",
         "omics:CreateSequenceStore",
         "omics:CreateWorkflow",
-        "omics:StartRun"
+        "omics:StartRun",
+        "omics:TagResource"
       ],
       "Resource": "*",
       "Condition": {

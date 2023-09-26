@@ -5,7 +5,9 @@
       "Sid": "Denyinspector2",
       "Effect": "Deny",
       "Action": [
-        "inspector2:TagResource"
+        "inspector2:CreateFilter",
+        "inspector2:TagResource",
+        "inspector2:UpdateFilter"
       ],
       "Resource": "*",
       "Condition": {

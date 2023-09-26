@@ -5,7 +5,9 @@
       "Sid": "Denysigner",
       "Effect": "Deny",
       "Action": [
-        "signer:PutSigningProfile"
+        "signer:PutSigningProfile",
+        "signer:TagResource",
+        "signer:UntagResource"
       ],
       "Resource": "*",
       "Condition": {

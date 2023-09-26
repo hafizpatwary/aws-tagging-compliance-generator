@@ -5,7 +5,8 @@
       "Sid": "Denyhealthlake",
       "Effect": "Deny",
       "Action": [
-        "healthlake:CreateFHIRDatastore"
+        "healthlake:CreateFHIRDatastore",
+        "healthlake:TagResource"
       ],
       "Resource": "*",
       "Condition": {

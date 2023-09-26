@@ -5,10 +5,12 @@
       "Sid": "Denyds",
       "Effect": "Deny",
       "Action": [
+        "ds:AddTagsToResource",
         "ds:ConnectDirectory",
         "ds:CreateDirectory",
         "ds:CreateIdentityPoolDirectory",
-        "ds:CreateMicrosoftAD"
+        "ds:CreateMicrosoftAD",
+        "ds:RemoveTagsFromResource"
       ],
       "Resource": "*",
       "Condition": {

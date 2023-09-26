@@ -5,7 +5,9 @@
       "Sid": "Denymigrationhub-orchestrator",
       "Effect": "Deny",
       "Action": [
-        "migrationhub-orchestrator:CreateWorkflow"
+        "migrationhub-orchestrator:CreateWorkflow",
+        "migrationhub-orchestrator:TagResource",
+        "migrationhub-orchestrator:UntagResource"
       ],
       "Resource": "*",
       "Condition": {

@@ -6,7 +6,8 @@
       "Effect": "Deny",
       "Action": [
         "m2:CreateApplication",
-        "m2:CreateEnvironment"
+        "m2:CreateEnvironment",
+        "m2:TagResource"
       ],
       "Resource": "*",
       "Condition": {

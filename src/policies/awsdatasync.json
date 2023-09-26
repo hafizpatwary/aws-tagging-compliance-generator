@@ -5,6 +5,7 @@
       "Sid": "Denydatasync",
       "Effect": "Deny",
       "Action": [
+        "datasync:AddStorageSystem",
         "datasync:CreateAgent",
         "datasync:CreateLocationAzureBlob",
         "datasync:CreateLocationEfs",
@@ -16,7 +17,10 @@
         "datasync:CreateLocationNfs",
         "datasync:CreateLocationObjectStorage",
         "datasync:CreateLocationS3",
-        "datasync:CreateLocationSmb"
+        "datasync:CreateLocationSmb",
+        "datasync:CreateTask",
+        "datasync:StartTaskExecution",
+        "datasync:TagResource"
       ],
       "Resource": "*",
       "Condition": {

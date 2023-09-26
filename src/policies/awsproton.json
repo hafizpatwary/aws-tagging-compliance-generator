@@ -5,7 +5,21 @@
       "Sid": "Denyproton",
       "Effect": "Deny",
       "Action": [
-        "proton:CreateEnvironmentAccountConnection"
+        "proton:CreateComponent",
+        "proton:CreateEnvironment",
+        "proton:CreateEnvironmentAccountConnection",
+        "proton:CreateEnvironmentTemplate",
+        "proton:CreateEnvironmentTemplateMajorVersion",
+        "proton:CreateEnvironmentTemplateMinorVersion",
+        "proton:CreateEnvironmentTemplateVersion",
+        "proton:CreateRepository",
+        "proton:CreateService",
+        "proton:CreateServiceInstance",
+        "proton:CreateServiceTemplate",
+        "proton:CreateServiceTemplateMajorVersion",
+        "proton:CreateServiceTemplateMinorVersion",
+        "proton:CreateServiceTemplateVersion",
+        "proton:TagResource"
       ],
       "Resource": "*",
       "Condition": {

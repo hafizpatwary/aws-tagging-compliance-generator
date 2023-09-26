@@ -6,7 +6,9 @@
       "Effect": "Deny",
       "Action": [
         "s3:CreateJob",
-        "s3:PutStorageLensConfiguration"
+        "s3:PutJobTagging",
+        "s3:PutStorageLensConfiguration",
+        "s3:PutStorageLensConfigurationTagging"
       ],
       "Resource": "*",
       "Condition": {

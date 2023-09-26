@@ -5,7 +5,13 @@
       "Sid": "Denykendra",
       "Effect": "Deny",
       "Action": [
-        "kendra:CreateIndex"
+        "kendra:CreateDataSource",
+        "kendra:CreateFaq",
+        "kendra:CreateFeaturedResultsSet",
+        "kendra:CreateIndex",
+        "kendra:CreateQuerySuggestionsBlockList",
+        "kendra:CreateThesaurus",
+        "kendra:TagResource"
       ],
       "Resource": "*",
       "Condition": {

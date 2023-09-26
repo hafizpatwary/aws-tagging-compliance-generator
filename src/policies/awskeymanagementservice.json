@@ -5,7 +5,8 @@
       "Sid": "Denykms",
       "Effect": "Deny",
       "Action": [
-        "kms:CreateKey"
+        "kms:CreateKey",
+        "kms:TagResource"
       ],
       "Resource": "*",
       "Condition": {

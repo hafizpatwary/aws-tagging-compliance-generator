@@ -5,7 +5,9 @@
       "Sid": "Denycodecatalyst",
       "Effect": "Deny",
       "Action": [
-        "codecatalyst:AcceptConnection"
+        "codecatalyst:AcceptConnection",
+        "codecatalyst:TagResource",
+        "codecatalyst:UntagResource"
       ],
       "Resource": "*",
       "Condition": {

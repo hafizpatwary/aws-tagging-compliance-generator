@@ -5,7 +5,9 @@
       "Sid": "Denyoutposts",
       "Effect": "Deny",
       "Action": [
-        "outposts:CreateSite"
+        "outposts:CreateOutpost",
+        "outposts:CreateSite",
+        "outposts:TagResource"
       ],
       "Resource": "*",
       "Condition": {

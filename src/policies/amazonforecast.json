@@ -5,7 +5,24 @@
       "Sid": "Denyforecast",
       "Effect": "Deny",
       "Action": [
-        "forecast:CreateAutoPredictor"
+        "forecast:CreateAutoPredictor",
+        "forecast:CreateDataset",
+        "forecast:CreateDatasetGroup",
+        "forecast:CreateDatasetImportJob",
+        "forecast:CreateExplainability",
+        "forecast:CreateExplainabilityExport",
+        "forecast:CreateForecast",
+        "forecast:CreateForecastEndpoint",
+        "forecast:CreateForecastExportJob",
+        "forecast:CreateMonitor",
+        "forecast:CreatePredictor",
+        "forecast:CreatePredictorBacktestExportJob",
+        "forecast:CreateWhatIfAnalysis",
+        "forecast:CreateWhatIfForecast",
+        "forecast:CreateWhatIfForecastExport",
+        "forecast:ResumeResource",
+        "forecast:StopResource",
+        "forecast:TagResource"
       ],
       "Resource": "*",
       "Condition": {

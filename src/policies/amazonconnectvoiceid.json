@@ -5,7 +5,8 @@
       "Sid": "Denyvoiceid",
       "Effect": "Deny",
       "Action": [
-        "voiceid:CreateDomain"
+        "voiceid:CreateDomain",
+        "voiceid:TagResource"
       ],
       "Resource": "*",
       "Condition": {

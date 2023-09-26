@@ -5,7 +5,8 @@
       "Sid": "Denyswf",
       "Effect": "Deny",
       "Action": [
-        "swf:RegisterDomain"
+        "swf:RegisterDomain",
+        "swf:TagResource"
       ],
       "Resource": "*",
       "Condition": {

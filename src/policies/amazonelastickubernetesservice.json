@@ -5,8 +5,13 @@
       "Sid": "Denyeks",
       "Effect": "Deny",
       "Action": [
+        "eks:AssociateIdentityProviderConfig",
+        "eks:CreateAddon",
         "eks:CreateCluster",
-        "eks:RegisterCluster"
+        "eks:CreateFargateProfile",
+        "eks:CreateNodegroup",
+        "eks:RegisterCluster",
+        "eks:TagResource"
       ],
       "Resource": "*",
       "Condition": {

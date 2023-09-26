@@ -5,7 +5,11 @@
       "Sid": "Denygreengrass",
       "Effect": "Deny",
       "Action": [
-        "greengrass:CreateDeployment"
+        "greengrass:CreateComponentVersion",
+        "greengrass:CreateDeployment",
+        "greengrass:ListTagsForResource",
+        "greengrass:TagResource",
+        "greengrass:UntagResource"
       ],
       "Resource": "*",
       "Condition": {

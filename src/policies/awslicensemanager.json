@@ -6,7 +6,8 @@
       "Effect": "Deny",
       "Action": [
         "license-manager:CreateLicenseConfiguration",
-        "license-manager:CreateLicenseManagerReportGenerator"
+        "license-manager:CreateLicenseManagerReportGenerator",
+        "license-manager:TagResource"
       ],
       "Resource": "*",
       "Condition": {

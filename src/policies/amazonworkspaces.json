@@ -5,10 +5,17 @@
       "Sid": "Denyworkspaces",
       "Effect": "Deny",
       "Action": [
+        "workspaces:CopyWorkspaceImage",
         "workspaces:CreateConnectionAlias",
         "workspaces:CreateIpGroup",
+        "workspaces:CreateStandbyWorkspaces",
         "workspaces:CreateTags",
-        "workspaces:DeleteTags"
+        "workspaces:CreateUpdatedWorkspaceImage",
+        "workspaces:CreateWorkspaceBundle",
+        "workspaces:CreateWorkspaceImage",
+        "workspaces:CreateWorkspaces",
+        "workspaces:DeleteTags",
+        "workspaces:RegisterWorkspaceDirectory"
       ],
       "Resource": "*",
       "Condition": {

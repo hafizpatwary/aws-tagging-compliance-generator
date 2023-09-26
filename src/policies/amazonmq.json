@@ -6,7 +6,8 @@
       "Effect": "Deny",
       "Action": [
         "mq:CreateBroker",
-        "mq:CreateConfiguration"
+        "mq:CreateConfiguration",
+        "mq:CreateTags"
       ],
       "Resource": "*",
       "Condition": {

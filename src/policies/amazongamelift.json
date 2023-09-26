@@ -13,7 +13,8 @@
         "gamelift:CreateLocation",
         "gamelift:CreateMatchmakingConfiguration",
         "gamelift:CreateMatchmakingRuleSet",
-        "gamelift:CreateScript"
+        "gamelift:CreateScript",
+        "gamelift:TagResource"
       ],
       "Resource": "*",
       "Condition": {

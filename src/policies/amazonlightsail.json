@@ -9,13 +9,20 @@
         "lightsail:CreateCertificate",
         "lightsail:CreateContainerService",
         "lightsail:CreateDisk",
+        "lightsail:CreateDiskFromSnapshot",
+        "lightsail:CreateDiskSnapshot",
         "lightsail:CreateDistribution",
         "lightsail:CreateDomain",
+        "lightsail:CreateInstanceSnapshot",
         "lightsail:CreateInstances",
+        "lightsail:CreateInstancesFromSnapshot",
         "lightsail:CreateKeyPair",
         "lightsail:CreateLoadBalancer",
         "lightsail:CreateRelationalDatabase",
-        "lightsail:CreateRelationalDatabaseSnapshot"
+        "lightsail:CreateRelationalDatabaseFromSnapshot",
+        "lightsail:CreateRelationalDatabaseSnapshot",
+        "lightsail:TagResource",
+        "lightsail:UntagResource"
       ],
       "Resource": "*",
       "Condition": {

@@ -5,8 +5,11 @@
       "Sid": "Denymediaconvert",
       "Effect": "Deny",
       "Action": [
+        "mediaconvert:CreateJob",
+        "mediaconvert:CreateJobTemplate",
         "mediaconvert:CreatePreset",
-        "mediaconvert:CreateQueue"
+        "mediaconvert:CreateQueue",
+        "mediaconvert:TagResource"
       ],
       "Resource": "*",
       "Condition": {
