@@ -61,7 +61,7 @@ def process_topic_page(topic_url, desired_condition):
     response = fetch_page(topic_url)
     logger.debug(f"Processing {topic_url}")
     pattern = r'list_(.*?)\.html'
-    logger.info(topic_url)
+    logger.info(f"Processing: {topic_url}")
     match = re.search(pattern, topic_url)
     service = match.group(1)
     logger.debug(service)
@@ -91,13 +91,15 @@ def process_topic_page(topic_url, desired_condition):
                 
                 if 'rowspan' in cells[0].attrs:
                     rowspan = int(cells[0]['rowspan'])
-                    for _ in range(rowspan - 1):
+                    logger.debug(f"Number of rowspan for {action}: {rowspan}")
+                    for _ in range(rowspan):
                         cells = rows[i].find_all('td')
                         process_row(cells)
+                        logger.debug(f"Processed: {action} with table index {i}")
                         i += 1
                 else:
                     process_row(cells)
-                i += 1
+                    i += 1
         return service, service_prefix, filtered_actions
 
 def generate_policy(resource, action):
@@ -164,7 +166,6 @@ def main():
 
         service_actions_filtered = {}
         combined_actions =[]
-        topics()
         for index, topic in enumerate(topics):
             # if index >= 15:
             #     break
@@ -174,9 +175,6 @@ def main():
             logger.debug(f"Service: {service} Actions: {actions}")
             service_actions_filtered[service] = {'prefix': service_prefix, 'actions': actions}
             combined_actions += actions
-            print("---------------------START---------------------")
-            print(f"{service}, {service_prefix}, {actions}")
-            print("---------------------END---------------------")
         logger.debug(service_actions_filtered)
         # actions = [action for value in service_actions_filtered.values() for action in value["actions"]]
         create_file("_actions", json.dumps(combined_actions, indent=2), folder_name='.')
