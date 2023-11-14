@@ -123,7 +123,6 @@ def generate_policy(resource, action):
                 "Resource": "*",
                 "Condition": {
                     "Null": {
-                        "aws:RequestTag/team": "true",
                         "aws:RequestTag/cost-centre": "true"
                     }
                 }
