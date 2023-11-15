@@ -310,7 +310,7 @@ def generate_policy(resource, actions, max_char_count=6144 ,return_json=False):
                 "Resource": "*",
                 "Condition": {
                     "Null": {
-                        "aws:RequestTag/CostCentre": "true"
+                        "aws:RequestTag/CostCenter": "true"
                     }
                 }
             }
